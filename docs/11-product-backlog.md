@@ -56,3 +56,12 @@ This backlog lists the main tasks required to complete The Thai Lounge website. 
 ## Backlog Status
 
 The backlog will be updated as tasks are completed. The priority is to meet the mandatory assessment requirements and deliver a working, tested website.
+
+## Future Enhancements
+
+These features are outside the initial MS4 scope unless required by the assessment brief.
+
+- Allow customers to select a preferred massage therapist when booking.
+- Store staff details and manage individual staff availability.
+- Display appointment times based on the selected therapist's availability.
+- Prevent bookings that conflict with a therapist's existing appointments.
