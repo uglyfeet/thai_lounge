@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #28483D;
+    --secondary-color: #A8B5A0;
+    --background-color: #F7F2E8;
+    --accent-color: #B89558;
+    --text-color: #302F2B;
+    --heading-font: 'Cormorant Garamond', serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 30px;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+section {
+    background-color: white;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+section p:last-child {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+/* Website header */
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    color: var(--background-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Navigation menu */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--background-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
