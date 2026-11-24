@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Thai Lounge | Book a Treatment</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>The Thai Lounge</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/treatments/">Treatments</a>
+            <a href="/bookings/my-bookings/">My Bookings</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book a Treatment</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </main>
+
+</body>
+</html>

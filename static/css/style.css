@@ -85,3 +85,16 @@ nav a {
 nav a:hover {
     color: var(--accent-color);
 }
+
+/* Form validation errors */
+
+.errorlist {
+    color: #b00020;
+    font-weight: bold;
+    background-color: #fce8e8;
+    border-left: 4px solid #b00020;
+    padding: 10px 15px;
+    border-radius: 4px;
+    list-style: none;
+    margin: 8px 0;
+}

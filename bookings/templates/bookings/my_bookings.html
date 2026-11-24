@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Thai Lounge | My Bookings</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>The Thai Lounge</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/treatments/">Treatments</a>
+            <a href="/bookings/create/">Book a Treatment</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>My Bookings</h2>
+
+        {% for booking in bookings %}
+            <section>
+                <h3>{{ booking.treatment.name }}</h3>
+                <p>Date: {{ booking.booking_date }}</p>
+                <p>Time: {{ booking.booking_time }}</p>
+                <p>Duration: {{ booking.treatment.duration }} minutes</p>
+                <p>Cost: £{{ booking.treatment.price|floatformat:2 }}</p>
+            </section>
+        {% empty %}
+            <p>You currently have no bookings.</p>
+        {% endfor %}
+    </main>
+
+</body>
+</html>
